@@ -123,25 +123,28 @@
     padding-bottom: 32px;
     display: block;}
 
- .contact-nav .link:hover,
- .contact-nav .link:focus {color: var(--accent-color);}
+   
 
 .contact-nav{margin-bottom: 0px;
 display: flex;
 margin-left: auto;}
+.contact-nav .link{display: flex;
+justify-items: center;}
 
-.contact-nav .item+ .item{ margin-left: 50px;}
-.email-svg{justify-self: baseline;
+
+/* .contact-nav .item+ .item{ margin-left: 50px;} */
+.email-svg{
   color: rgba(117, 117, 117, 1);
   background-color: rgba(255, 255, 255, 1);
   align-self: center;
   margin-right: 10px;
-  text-align: center;
-  justify-content: center;}
-  .email-svg{fill: currentColor;}
-  .email-svg:hover,
-  .email-svg:focus{ color: var(--accent-color);
-  background-color: var(--primary-white-color);}
+  align-items: center;
+  fill:currentColor;}
+  
+  .contact-nav .link:focus .email-svg{fill: var(--accent-color);}
+  /* .email-svg:hover,
+  .email-svg:focus{ fill: var(--accent-color);
+  background-color: var(--primary-white-color);} */
 
  /* hero */
  .hero{ 
